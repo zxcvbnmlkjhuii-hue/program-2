@@ -21,18 +21,32 @@ int main()
 	// 0x8000: 이전에 누른 적이 없고 호출 시점에도 눌려있는상태
 	// 0x8001: 이전에 누른 적이 있고 호출 시점에도 눌려있는상태
 	  
-
+	int i = 0;
 	while(1)
 	{
 		
-
-		if (GetAsyncKeyState(VK_SPACE) & 0x0001)
+		if (i == SIZE)
 		{
-			int i = ;
-			
-			printf("%s\n", dialog[i]);
-			int j= i + 1;
+			break;
 		}
+		else 
+		{
+			if (GetAsyncKeyState(VK_SPACE) & 0x0001)
+			{
+				if (i % 2 == 0)
+				{
+					printf("탐정 :%s\n", dialog[i]);
+					i++;
+				}
+				else
+				{
+					printf("의뢰인 :%s\n", dialog[i]);
+					i++;
+				}
+
+			}
+		}
+		
 	}
 	
 

@@ -1,0 +1,3 @@
+﻿  source.c
+C:\Users\user\OneDrive\Desktop\program\source.c(34,6): warning C4552: '+': 식의 결과가 사용되지 않습니다.
+  program.vcxproj -> C:\Users\user\OneDrive\Desktop\program\x64\Debug\program.exe

@@ -1,57 +1,48 @@
 #include <stdio.h>
-#include <Windows.h>
-#define SIZE 10
+#include <time.h>
+
+void shuffle(int array[], int size)
+{
+
+
+	for (int i = 0; i < size; i++)
+	{
+		int seed = rand() % size;
+		int temporary = array[seed];
+		array[seed] = array[i];
+		array[i] = temporary;
+
+
+	}
+
+}
 int main()
 {
-	const char * dialog[SIZE];
+#pragma region 의사 난수
+	// 0~32767 사이의 난수 값을 반환하는 함수입니다.
 
-	dialog[0] = "사건 현장은 어디죠?";
-	dialog[1] = "바로 이 방이에요.";
-	dialog[2] = "문은 잠겨 있었습니까?";
-	dialog[3] = "네. 안에서요.";
-	dialog[4] = "그럼 누군가는, 열쇠를 다시 돌려놓았겠군요.";
-	dialog[5] = "…그럴 리가 없어요.";
-	dialog[6] = "불가능한 건 없습니다. 숨겨졌을 뿐이죠.";
-	dialog[7] = "설마… 사고가 아니란 말인가요?";
-	dialog[8] = "사고는 흔적을 남깁니다.";
-	dialog[9] = "하지만 이건, 의도가 보입니다.";
-	
-	// 0x0000: 이전에 누른 적이 없고 호출 시점에도 눌려있지 않은 상태
-	// 0x0001: 이전에 누른 적이 있고 호출 시점에도 눌려있지 않은 상태
-	// 0x8000: 이전에 누른 적이 없고 호출 시점에도 눌려있는상태
-	// 0x8001: 이전에 누른 적이 있고 호출 시점에도 눌려있는상태
-	  
-	int i = 0;
-	while(1)
+	// UTC 기준으로 1970년 1월 1일 0시 0분 0초부터 경과된
+	// 시간을 초(sec)로 반환하는 함수입니다.
+
+	// srand : rand()가 사용할 초기값(seed)을 설정하는 함수
+
+
+	//srand(time(NULL));
+	//int random = rand();
+
+	//printf("randoom : %d \n",random%10 +1);
+#pragma endregion
+
+#pragma region 셔플 함수
+	srand(time(NULL));
+
+	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+	int size = sizeof(arr) / sizeof(arr[0]);
+	shuffle(arr, size);
+	for (int j = 0; j < size; j++)
 	{
-		
-		if (i == SIZE)
-		{
-			break;
-		}
-		else 
-		{
-			if (GetAsyncKeyState(VK_SPACE) & 0x0001)
-			{
-				if (i % 2 == 0)
-				{
-					printf("탐정 :%s\n", dialog[i]);
-					i++;
-				}
-				else
-				{
-					printf("의뢰인 :%s\n", dialog[i]);
-					i++;
-				}
-
-			}
-		}
-		
+		printf("%d\n", arr[j]);
 	}
-	
-
-	//짝수 -> 탐정
-	//홀수 -> 의뢰인
-
+#pragma endregion
 	return 0;
 }

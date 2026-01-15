@@ -1,2 +1,6 @@
 ﻿  source.c
+C:\Users\user\OneDrive\Desktop\program-2\program\source.c(46,8): warning C4022: 'fread': 실제 매개 변수 1의 포인터가 일치하지 않습니다.
+C:\Users\user\OneDrive\Desktop\program-2\program\source.c(47,9): warning C4477: 'printf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int'입니다.
+C:\Users\user\OneDrive\Desktop\program-2\program\source.c(47,9): warning C4313: 'printf': 서식 문자열의 '%s'이(가) int' 형식의 인수 1과(와) 충돌합니다.
+C:\Users\user\OneDrive\Desktop\program-2\program\source.c(27,7): warning C4047: '초기화 중': 'char'의 간접 참조 수준이 'void *'과(와) 다릅니다.
   program.vcxproj -> C:\Users\user\OneDrive\Desktop\program-2\program\x64\Debug\program.exe

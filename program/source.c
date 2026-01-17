@@ -1,7 +1,38 @@
 #include <stdio.h>
-#include <time.h>
+#include <stdlib.h>
 
-#define SIZE 100000
+
+void load(const char* fileName)
+{
+
+	FILE* file = fopen(fileName, "r");
+
+	int count = 0;
+
+	char c = NULL;
+
+	while (c = fgetc(file) != EOF)
+	{
+		count++;
+	}
+	rewind(file);
+
+	char* buffer = malloc(count + 1);
+
+	buffer[count] = NULL;
+
+	fread(buffer, sizeof(char), count, file);
+	// 첫 번째 매개 변수 : 읽은 데잉터를 저장할 메모리 버퍼의 포인터 변수
+	// 두 번째 매개 변수 : 각 데이터 항목의 크기
+	// 세 번째 매개 변수 : 읽을 데이터 항목의 개수
+	// 네 번째 매개 변수 : 파일 포인터 변수
+
+	printf("%s", buffer);
+	fclose(file);
+
+	free(buffer);
+}
+
 int main()
 {
 #pragma region 파일 입출력
@@ -19,33 +50,9 @@ int main()
 	//fclose(file);
 #pragma endregion  파일 읽기 
 	
-	
-	FILE* file = fopen("date.txt", "r");
-
-	int count = 0;
-	
-	char c = NULL;
-
-	while (fgetc(file) != EOF)
-	{
-		count++;
-	}
-	printf("%d",count);
-	long size = 0;
-	// 파일 포인터를 파일의 끝으로 이동
-	fseek(file, 0, SEEK_END);
-	size = ftell(file);
-	rewind(file);
+	//load("Resources/Uint1.txt");
 
 	
-
-	// 첫 번째 매개 변수 : 읽은 데잉터를 저장할 메모리 버퍼의 포인터 변수
-	// 두 번째 매개 변수 : 각 데이터 항목의 크기
-	// 세 번째 매개 변수 : 읽을 데이터 항목의 개수
-	// 네 번째 매개 변수 : 파일 포인터 변수
-	fread(size,sizeof(char), sizeof(size), file);
-	printf("%s", size);
-	fclose(file);
 
 #pragma endregion
 

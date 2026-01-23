@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "classs3th (File Input & Out
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class4th (Color System)", "..\Class4th (Color System)\Class4th (Color System).vcxproj", "{9B05510F-3BBF-4DC6-A34B-3E874B6B8CAD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Text RPG", "..\Text RPG\Text RPG.vcxproj", "{EB08AD0E-932D-478A-8CBF-3F0AE585502E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{9B05510F-3BBF-4DC6-A34B-3E874B6B8CAD}.Release|x64.Build.0 = Release|x64
 		{9B05510F-3BBF-4DC6-A34B-3E874B6B8CAD}.Release|x86.ActiveCfg = Release|Win32
 		{9B05510F-3BBF-4DC6-A34B-3E874B6B8CAD}.Release|x86.Build.0 = Release|Win32
+		{EB08AD0E-932D-478A-8CBF-3F0AE585502E}.Debug|x64.ActiveCfg = Debug|x64
+		{EB08AD0E-932D-478A-8CBF-3F0AE585502E}.Debug|x64.Build.0 = Debug|x64
+		{EB08AD0E-932D-478A-8CBF-3F0AE585502E}.Debug|x86.ActiveCfg = Debug|Win32
+		{EB08AD0E-932D-478A-8CBF-3F0AE585502E}.Debug|x86.Build.0 = Debug|Win32
+		{EB08AD0E-932D-478A-8CBF-3F0AE585502E}.Release|x64.ActiveCfg = Release|x64
+		{EB08AD0E-932D-478A-8CBF-3F0AE585502E}.Release|x64.Build.0 = Release|x64
+		{EB08AD0E-932D-478A-8CBF-3F0AE585502E}.Release|x86.ActiveCfg = Release|Win32
+		{EB08AD0E-932D-478A-8CBF-3F0AE585502E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

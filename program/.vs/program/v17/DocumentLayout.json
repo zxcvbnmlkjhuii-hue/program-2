@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\Users\\user\\OneDrive\\Desktop\\program-2\\program\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EB08AD0E-932D-478A-8CBF-3F0AE585502E}|..\\Text RPG\\Text RPG.vcxproj|C:\\Users\\user\\OneDrive\\Desktop\\program-2\\Text RPG\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3E16D2BE-FA4A-4512-8FDB-F56B86D06468}|program.vcxproj|C:\\Users\\user\\OneDrive\\Desktop\\program-2\\program\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3E16D2BE-FA4A-4512-8FDB-F56B86D06468}|program.vcxproj|solutionrelative:source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -33,7 +36,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 278,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -41,7 +44,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "source.c",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\program-2\\class2th (Timw)\\source.c",
               "RelativeDocumentMoniker": "..\\class2th (Timw)\\source.c",
@@ -50,7 +53,19 @@
               "ViewState": "AgIAACgAAAAAAAAAAAAiwEMAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-01-14T12:11:31.996Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "source.c",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\program-2\\Text RPG\\source.c",
+              "RelativeDocumentMoniker": "..\\Text RPG\\source.c",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\program-2\\Text RPG\\source.c",
+              "RelativeToolTip": "..\\Text RPG\\source.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-01-23T12:48:32.555Z",
               "EditorCaption": ""
             },
             {
@@ -63,7 +78,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "source.c",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\program-2\\Class4th (Color System)\\source.c",
               "RelativeDocumentMoniker": "..\\Class4th (Color System)\\source.c",
@@ -71,12 +86,11 @@
               "RelativeToolTip": "..\\Class4th (Color System)\\source.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-01-19T12:17:01.993Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-19T12:17:01.993Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "source.h",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\program-2\\program\\source.h",
               "RelativeDocumentMoniker": "source.h",
@@ -88,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "source.c",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\program-2\\classs3th (File Input \u0026 Output)\\source.c",
               "RelativeDocumentMoniker": "..\\classs3th (File Input \u0026 Output)\\source.c",
@@ -96,25 +110,24 @@
               "RelativeToolTip": "..\\classs3th (File Input \u0026 Output)\\source.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-01-19T11:04:07.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-19T11:04:07.504Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "source.c",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\program-2\\program\\source.c",
               "RelativeDocumentMoniker": "source.c",
               "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\program-2\\program\\source.c",
               "RelativeToolTip": "source.c",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAkwFsAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAkwFsAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-01-12T11:10:50.536Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "source.c",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\program-2\\class 1th (intput) System\\source.c",
               "RelativeDocumentMoniker": "..\\class 1th (intput) System\\source.c",
@@ -122,12 +135,11 @@
               "RelativeToolTip": "..\\class 1th (intput) System\\source.c",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAADYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-01-13T11:09:50.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T11:09:50.357Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "stdio.h",
               "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\stdio.h",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\stdio.h",

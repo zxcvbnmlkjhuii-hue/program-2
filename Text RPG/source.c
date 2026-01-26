@@ -1,97 +1,134 @@
 #include <stdio.h>
 #include <conio.h>
 #include <windows.h>
-
-
-
-
-void ShowPlayer(int hp, int att, int dex)
+enum State
 {
+	Start,
+	Plain,
+	Tower,
+	Action,
+	Battle
+};
+struct Player
+{
+	char name[20];
+	int hp;
+	int attack;
+	int defense;
+	int level;
+	int exp;
+	int nextExp;
+	int gold;
 
-	printf("------------------------------\n");
-	printf("떠돌이 기사\n");
-	printf("Hp : %d Att ; %d Dex : %d\n", hp, att, dex);
-	printf("------------------------------\n");
+};
+struct Monster
+{
+	char name[20];
+	int hp;
+	int attack;
+	int defense;
+	int level;
+	int exp;
+	int gold;
+};
+
+void ShowState()
+{
+	printf("무엇을 하시겠습니까\n");
+	printf("1.평원을 간다\n");
+	printf("2.타워을 간다\n");
+	printf("3.마을에서 휴식을 한다\n");
+}
+void ShowPlain()
+{
+	printf("평원에 도착했습니다.\n");
+	printf("1.탐색한다\n");
+	printf("2.돌아간다\n");
+}
+void ShowPlayerState(struct Player player)
+{
+	printf("---------------------------------\n");
+	printf("이름:%s\n", player.name);
+	printf("체력:%d  ", player.hp);
+	printf("공격력:%d  ", player.attack);
+	printf("방어력:%d  \n", player.defense);
+	printf("레벨:%d  ", player.level);
+	printf("경험치:%d  ", player.exp);
+	printf("필요 경험치:%d\n", player.nextExp);
+	printf("골드:%d\n", player.gold);
+	printf("---------------------------------\n");
 }
 
-void ShowAction()
+
+void main()
 {
-	printf("1. 공격 \n");
-	printf("2. 방어 \n");
-}
-
-void ShowMonster(char* name, int hp, int att, int dex)
-{
-
-	printf("------------------------------\n");
-	printf("이름 : %s\n", name);
-	printf("Hp : %d Att ; %d Dex : %d\n", hp, att, dex);
-	printf("------------------------------\n");
-}
-
-int main() {
-	char key;
-	int playerLv = 1;
-	int playerHp = 100;
-	int playerAtt = 10;
-	int playerDex = 5;
-
-
-	int monsterHp = 50;
-	int monsterAtt = 7;
-	int monsterDex = 3;
-
+	enum State state = Start;
+	struct Player player = { "기사",100,10,3,1,0,100,50 };
+	struct Monster monster;
 	while (1)
 	{
-		system("cls");
-		ShowPlayer(playerHp, playerAtt, playerDex);
-		ShowAction();
-		ShowMonster("늑대", monsterHp, monsterAtt, monsterDex);
-		key = _getch();
-		switch (key)
+		switch (state)
 		{
-		case 49:;
-			printf("공격\n");
-			if (playerAtt - monsterDex < 0)
-			{
-				printf("몬스터의 회피로 공격에 실패했습니다!\n");
-				system("pause");
-			}
-			else
-			{
-				monsterHp -= playerAtt - monsterDex;
-				printf("몬스터에게 %d의 데미지를 입혔습니다!\n", playerAtt - monsterDex);
-				system("pause");
-			}
+		case Start:
+			ShowPlayerState(player);
+			ShowState();
 
-			if (monsterHp <= 0)
+			int input = 0;
+			scanf_s("%d", &input);
+			if (input == 1)
 			{
-				printf("몬스터를 처치했습니다!\n");
-				system("pause");
-				break;
+				state = Plain;
+			}
+			else if (input == 2)
+			{
+				state = Tower;
+			}
+			else if (input == 3)
+			{
+				printf("마을에서 휴식을 합니다\n");
+				player.hp = 100;
 			}
 			break;
-
-		case 50:;
-			printf("방어");
-			if (monsterAtt - playerDex < 0)
+		case Plain:
+			system("cls");
+			ShowPlayerState(player);
+			ShowPlain();
+			 input = 0;
+			scanf_s("%d", &input);
+			if (input == 1)
 			{
-				printf("방어에 성광 했습니다!\n");
-				system("pause");
+				state = Action;
 			}
-			else
-				playerHp -= monsterAtt - playerDex;
-			printf("몬스터에게서 %d의 데미지를 입었습니다!\n", monsterAtt - playerDex);
-			system("pause");
+			else if (input == 2)
+			{
+				state = Start;
+			}
+			break;
+		case Tower:
+			system("cls");
+			ShowPlayerState(player);
+			printf("타워에 도착했습니다.\n");
+			state = Start;
+			break;
+		case Action:
+			monster = (struct Monster){ "슬라임",30,5,1,1,20,10 };
+			system("cls");
+			ShowPlayerState(player);
+			printf("%s과 마주쳤습니다!\n",monster.name);
+			state = Battle;
+			break;
+		case Battle:
+			system("cls");
+			ShowPlayerState(player);
+			printf("전투를 시작합니다!\n");
+		
 			break;
 
-		default: printf("잘못된 입력\n");
-			system("pause");
+
+		default:
 			break;
 		}
 	}
 
 
-
-	return 0;
 }

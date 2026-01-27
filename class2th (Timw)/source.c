@@ -27,8 +27,8 @@ int main()
 	// srand : rand()가 사용할 초기값(seed)을 설정하는 함수
 
 
-	//srand(time(NULL));
-	//int random = rand();
+	srand(time(NULL));
+	int random = rand();
 
 	//printf("randoom : %d \n",random%10 +1);
 #pragma endregion

@@ -65,6 +65,9 @@ void main()
 	enum State state = Start;
 	struct Player player = { "기사",100,10,3,1,0,100,50 };
 	struct Monster monster;
+
+	srand(time(NULL));
+	int random = rand();
 	while (1)
 	{
 		switch (state)
@@ -132,3 +135,11 @@ void main()
 
 
 }
+
+
+
+//o 1. 유닛생산
+//o 2. 유닛의 현재 상태 출력
+// 3. 랜덤한 유닛 생성
+// 4. 유닛간의 전투 
+// 5. 유닛간의 전투 중 랜덤 이벤트 발생 (크리티컬, 회피 등)

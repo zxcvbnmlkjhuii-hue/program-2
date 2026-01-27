@@ -53,8 +53,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-01-14T12:11:31.996Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -70,9 +69,9 @@
               "Title": "source.c",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\program-2\\Text RPG\\source.c",
               "RelativeDocumentMoniker": "..\\Text RPG\\source.c",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\program-2\\Text RPG\\source.c*",
-              "RelativeToolTip": "..\\Text RPG\\source.c*",
-              "ViewState": "AgIAAF4AAAAAAAAAAADwv38AAAAKAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\program-2\\Text RPG\\source.c",
+              "RelativeToolTip": "..\\Text RPG\\source.c",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAAHkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-01-23T12:48:32.555Z",
               "EditorCaption": ""
@@ -87,8 +86,7 @@
               "RelativeToolTip": "..\\Class4th (Color System)\\source.c",
               "ViewState": "AgIAADAAAAAAAAAAAAAAAEgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-01-19T12:17:01.993Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-19T12:17:01.993Z"
             },
             {
               "$type": "Document",
@@ -100,8 +98,7 @@
               "RelativeToolTip": "source.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-19T11:31:25.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-19T11:31:25.049Z"
             },
             {
               "$type": "Document",
@@ -113,8 +110,7 @@
               "RelativeToolTip": "..\\classs3th (File Input \u0026 Output)\\source.c",
               "ViewState": "AgIAABsAAAAAAAAAAAAAABMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-01-19T11:04:07.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-19T11:04:07.504Z"
             },
             {
               "$type": "Document",
@@ -126,8 +122,7 @@
               "RelativeToolTip": "source.c",
               "ViewState": "AgIAADwAAAAAAAAAAAAAAFwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-01-12T11:10:50.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-12T11:10:50.536Z"
             },
             {
               "$type": "Document",
@@ -139,8 +134,7 @@
               "RelativeToolTip": "..\\class 1th (intput) System\\source.c",
               "ViewState": "AgIAABgAAAAAAAAAAAAAADYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-01-13T11:09:50.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T11:09:50.357Z"
             },
             {
               "$type": "Document",
